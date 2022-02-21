@@ -8,7 +8,7 @@
     &::before {
         @include style-line-title;
         margin-top: 23px;
-        margin-left: 6px;
+        margin-left: 320px;
         width: 66%;
     }
     h2 {
@@ -121,6 +121,11 @@
                 color: white;
                 padding-top: 3px;
             }
+            &:hover{
+                a{
+                    color: white;
+                }
+            }
         }
     }
 }
@@ -141,6 +146,24 @@
         margin-top: 8px;
         border: none;
     }
+    .js-form-item-keys {
+        input{
+            width: 345px;
+            margin-left: $gutter-ft;
+        }
+    }
+    .form-actions{
+        input{
+            position: absolute;
+            margin-top: -15px;
+            min-width: 40px;
+            font-size: 16px;
+            background-color: rgba(59, 183, 255, 0.808);
+            margin-top: 8px;
+            border: none;
+        }
+    }
+
     #edit-keys {
         width: 345px;
         margin-left: $gutter-ft;

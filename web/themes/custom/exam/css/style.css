@@ -9888,6 +9888,13 @@ a.tabledrag-handle .handle {
 table {
   caption-side: unset; }
 
+.progress {
+  display: block;
+  height: unset;
+  overflow: unset;
+  font-size: unset;
+  background-color: unset; }
+
 .region-title__action a.button {
   color: #fff;
   background-color: #003CC5;
@@ -10421,7 +10428,8 @@ header {
     width: 1270px;
     z-index: -2;
     background-color: black;
-    margin-top: -16px; }
+    margin-top: -16px;
+    max-width: 100%; }
   #block-blockabout::after {
     content: "";
     content: "";
@@ -10431,7 +10439,8 @@ header {
     width: 1270px;
     z-index: -2;
     background-color: #6c89b3;
-    margin-bottom: -10px; }
+    margin-bottom: -10px;
+    max-width: 100%; }
 
 #block-views-block-services-block-1 {
   text-align: center;
@@ -10478,6 +10487,8 @@ header {
       color: white;
       font-size: 15px;
       text-decoration: none; }
+    #block-views-block-services-block-1 .field--name-field-link-development:hover {
+      opacity: 0.5; }
   #block-views-block-services-block-1 .layout__region {
     margin: 0 auto;
     padding-left: 48px; }
@@ -10502,7 +10513,8 @@ header {
     width: 1250px;
     margin-top: 18px;
     z-index: -2;
-    margin-left: 18px; }
+    margin-left: 18px;
+    margin-left: 320px; }
   #block-views-block-projects-block-1 .field--name-field-text-projects {
     margin-top: 30px;
     font-size: 25px; }
@@ -10517,6 +10529,11 @@ header {
       color: white;
       font-size: 15px;
       text-decoration: none; }
+    #block-views-block-projects-block-1 .field--name-field-link-projects:hover {
+      background-color: #fff;
+      border: solid; }
+      #block-views-block-projects-block-1 .field--name-field-link-projects:hover a {
+        color: black; }
   #block-views-block-projects-block-1 .field--name-field-image-projects img {
     width: 290px;
     height: 290px; }
@@ -10546,14 +10563,6 @@ header {
   #block-views-block-projects-block-1 .node--view-mode-teaser .node__content {
     background-color: white;
     padding-bottom: 11px; }
-  #block-views-block-projects-block-1 .col-1 .field--name-field-taxonomy-services a {
-    color: darkturquoise; }
-  #block-views-block-projects-block-1 .col-2 .field--name-field-taxonomy-services a {
-    color: blueviolet; }
-  #block-views-block-projects-block-1 .col-3 .field--name-field-taxonomy-services a {
-    color: chocolate; }
-  #block-views-block-projects-block-1 .col-4 .field--name-field-taxonomy-services a {
-    color: deepskyblue; }
 
 .view-id-projects {
   background: -o-repeating-linear-gradient(315deg, rgba(0, 0, 0, 0.1), #fff 3px, #fff 10px, #fff 0px);
@@ -10602,6 +10611,31 @@ header {
   #block-views-block-view-our-team-block-1 .field--name-field-our-team__link a {
     text-decoration: none;
     color: white; }
+  #block-views-block-view-our-team-block-1 .field--name-field-our-team__link:hover {
+    -webkit-box-shadow: 0 0px 20px #6c89b3;
+            box-shadow: 0 0px 20px #6c89b3; }
+
+#block-views-block-view-our-team-block-1 img {
+  width: 290px;
+  height: 290px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
+
+#block-views-block-view-our-team-block-1 .col-2:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%); }
+
+#block-views-block-view-our-team-block-1 .col-1:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%); }
+
+#block-views-block-view-our-team-block-1 .col-3:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%); }
+
+#block-views-block-view-our-team-block-1 .col-4:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%); }
 
 #block-views-block-view-our-team-block-1 .social-media-link-icon--facebook span {
   color: white;
@@ -10662,19 +10696,22 @@ header {
     background-repeat: no-repeat;
     background-image: url(../img/heart1.png); }
 
-#block-views-block-clients-block-1 {
+.js-flag-message {
+  display: none; }
+
+#block-views-block-block-clients-block-1 {
   margin-top: 45px;
   margin-bottom: 169px; }
-  #block-views-block-clients-block-1 .view-content {
+  #block-views-block-block-clients-block-1 .view-content {
     margin-left: 2px; }
-  #block-views-block-clients-block-1 h2, #block-views-block-clients-block-1 .h2 {
+  #block-views-block-block-clients-block-1 h2, #block-views-block-block-clients-block-1 .h2 {
     text-align: center;
     font-size: 30px;
     width: 178px;
     background-color: white;
     margin: 0 auto;
     margin-bottom: 27px; }
-  #block-views-block-clients-block-1::before {
+  #block-views-block-block-clients-block-1::before {
     content: "";
     display: block;
     height: 1px;
@@ -10685,16 +10722,34 @@ header {
     margin-top: 18px;
     z-index: -2;
     margin-left: 18px; }
-  #block-views-block-clients-block-1 .field--type-image {
+  #block-views-block-block-clients-block-1 .field--type-image {
     text-align: center; }
-  #block-views-block-clients-block-1 .col-5 .field--type-image img {
+  #block-views-block-block-clients-block-1 .col-5 .field--type-image img {
     margin-top: -9px; }
-  #block-views-block-clients-block-1 .col-6 .field--type-image img {
+  #block-views-block-block-clients-block-1 .col-6 .field--type-image img {
     margin-top: -5px; }
-  #block-views-block-clients-block-1 .col-7 .field--type-image img {
+  #block-views-block-block-clients-block-1 .col-7 .field--type-image img {
     margin-top: -21px; }
-  #block-views-block-clients-block-1 .col-8 .field--type-image img {
+  #block-views-block-block-clients-block-1 .col-8 .field--type-image img {
     margin-top: -19px; }
+  #block-views-block-block-clients-block-1 .pager__item--next a {
+    position: absolute;
+    font-size: 103px;
+    right: 0;
+    top: 0;
+    margin-right: 160px;
+    margin-top: 57px;
+    color: transparent; }
+  #block-views-block-block-clients-block-1 .pager__item--previous a {
+    position: absolute;
+    font-size: 103px;
+    left: 0;
+    top: 0;
+    margin-right: 160px;
+    margin-top: 57px;
+    color: transparent; }
+  #block-views-block-block-clients-block-1 .is-active {
+    display: none; }
 
 #block-views-block-view-news-block-1 {
   margin-top: 163px; }
@@ -10710,7 +10765,7 @@ header {
     z-index: -2;
     margin-left: 18px;
     margin-top: 23px;
-    margin-left: 6px;
+    margin-left: 320px;
     width: 66%; }
   #block-views-block-view-news-block-1 h2, #block-views-block-view-news-block-1 .h2 {
     text-align: center;
@@ -10855,6 +10910,8 @@ header {
     font-size: 13px;
     color: white;
     padding-top: 3px; }
+  .block-field-blocknodenewsfield-news-button div:hover a {
+    color: white; }
 
 #edit-submit-view-news {
   text-transform: capitalize;
@@ -10866,6 +10923,17 @@ header {
   display: flex;
   margin-top: 41px; }
   .form--inline #edit-submit-view-news {
+    position: absolute;
+    margin-top: -15px;
+    min-width: 40px;
+    font-size: 16px;
+    background-color: rgba(59, 183, 255, 0.808);
+    margin-top: 8px;
+    border: none; }
+  .form--inline .js-form-item-keys input {
+    width: 345px;
+    margin-left: 15px; }
+  .form--inline .form-actions input {
     position: absolute;
     margin-top: -15px;
     min-width: 40px;
@@ -10994,16 +11062,25 @@ footer {
     margin-right: 300px; }
 
 .container {
-  max-width: 1320px;
-  overflow-x: hidden; }
+  max-width: 1320px; }
+
+a[href*="/taxonomy/term/1"] {
+  color: #1BBC9B; }
+
+a[href*="/taxonomy/term/2"] {
+  color: blueviolet; }
+
+a[href*="/taxonomy/term/3"] {
+  color: chocolate; }
+
+a[href*="/taxonomy/term/4"] {
+  color: deepskyblue; }
 
 .field--name-title {
   font-size: 0px; }
 
 .region-content {
-  min-height: 700px;
-  overflow-y: hidden;
-  overflow-x: hidden; }
+  min-height: 700px; }
 
 .fa-facebook {
   color: white;
@@ -11070,6 +11147,52 @@ header .simple-search-form {
   margin-bottom: 38px;
   margin-right: 84px; }
 
+header #edit-keys {
+  width: 200px;
+  background-color: white !important;
+  margin-right: 70px;
+  margin-top: -27px;
+  height: 40px;
+  color: black;
+  font-size: 17px;
+  padding-left: 15px; }
+
+header .icon {
+  margin-left: 180px; }
+
+header #edit-submit {
+  margin-left: 165px; }
+
+header input {
+  width: 173px !important;
+  height: 40px;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  padding-left: 15px; }
+  header input:focus {
+    color: black;
+    font-size: 17px;
+    padding-left: 15px; }
+
+header input:-internal-autofill-selected {
+  background-color: transparent;
+  color: black; }
+
+header .icon {
+  height: 40px;
+  width: 43px;
+  opacity: 0.6;
+  border: 2px solid rgba(60, 60, 69, 0.3);
+  margin-top: -4px;
+  margin-left: 173px; }
+
+header i.better_search {
+  height: 30px;
+  width: 55px;
+  background-size: contain;
+  opacity: 0.6; }
+
 .layout__region--second {
   display: contents; }
 
@@ -11077,6 +11200,38 @@ header .simple-search-form {
   border-right: 2px solid rgba(60, 60, 69, 0.3);
   height: 100px;
   max-width: 75px; }
+
+#block-views-block-projects-block-1 {
+  width: 145%;
+  margin-left: -306px; }
+  #block-views-block-projects-block-1 .view-display-id-block_1 {
+    margin-left: 0px;
+    padding-left: 90px; }
+  #block-views-block-projects-block-1 .cols-4 {
+    width: 74%;
+    margin: 0 auto; }
+    #block-views-block-projects-block-1 .cols-4 .col-2 {
+      margin-left: -28px; }
+    #block-views-block-projects-block-1 .cols-4 .col-3 {
+      margin-left: -28px; }
+    #block-views-block-projects-block-1 .cols-4 .col-4 {
+      margin-left: -28px; }
+
+#block-views-block-view-news-block-1 {
+  width: 145%;
+  margin-left: -306px; }
+  #block-views-block-view-news-block-1 .view-display-id-block_1 {
+    margin-left: 0px;
+    padding-left: 90px; }
+  #block-views-block-view-news-block-1 form {
+    margin-left: 215px; }
+  #block-views-block-view-news-block-1 .cols-2 {
+    width: 74%;
+    margin: 0 auto; }
+    #block-views-block-view-news-block-1 .cols-2 .col-1 {
+      margin-left: -28px; }
+    #block-views-block-view-news-block-1 .cols-2 .col-2 {
+      margin-left: -28px; }
 
 @media (max-width: 1600px) {
   /* #block-blockabout {
@@ -11141,11 +11296,7 @@ header .simple-search-form {
 
 @media (max-width: 1350px) {
   #block-blockabout {
-    margin-top: 0px; }
-    #block-blockabout::before {
-      width: 97%; }
-    #block-blockabout::after {
-      width: 97%; }
+    margin-top: 25px; }
   #block-views-block-services-block-1::before {
     width: 93%; }
   #block-views-block-view-our-team-block-1::before {
@@ -11603,10 +11754,8 @@ header .simple-search-form {
     margin-top: -145px; }
     .region-breadcrumb .creativity__title {
       color: #6c89b3; }
-  #block-blockabout::before {
-    width: 90%; }
-  #block-blockabout::after {
-    width: 90%; }
+  #block-blockabout {
+    margin-top: 25px; }
   #block-views-block .view-id-projects {
     height: 755px !important; } }
 

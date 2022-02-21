@@ -24,15 +24,26 @@
 @import "footer";
 .container {
     max-width: 1320px;
-    overflow-x: hidden;
 }
+a[href*="/taxonomy/term/1"] {
+    color: #1BBC9B;
+}
+a[href*="/taxonomy/term/2"] {
+    color: blueviolet;
+}
+a[href*="/taxonomy/term/3"] {
+    color: chocolate;
+}
+a[href*="/taxonomy/term/4"] {
+    color: deepskyblue;
+}
+
 .field--name-title {
     font-size: $none;
 }
 .region-content {
     min-height: 700px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+
 }
 .fa {
     &-facebook {
@@ -66,7 +77,57 @@ header {
         margin-right: 84px;
     }
 }
-
+header{
+    #edit-keys{
+        width: 200px;
+        background-color: white !important;
+        margin-right: 70px;
+        margin-top: -27px;
+        height:40px;
+        color: black;
+        font-size: 17px;
+        padding-left: 15px;
+    }
+    .icon{
+      margin-left: 180px;
+     
+    }
+   #edit-submit{
+        margin-left: 165px;
+    } 
+    input{
+        width: 173px !important;
+        height: 40px;
+        background-color: white;
+        color: black;
+        font-size: 17px;
+        padding-left: 15px; 
+        &:focus{
+        color: black;
+        font-size: 17px;
+        padding-left: 15px; 
+        }
+         
+    }
+    input:-internal-autofill-selected {
+        background-color: transparent;
+        color: black;
+    }
+    .icon{
+        height: 40px;
+        width: 43px;
+        opacity: 0.6;
+        border:  2px solid rgba(60, 60, 69, 0.3);
+        margin-top: -4px;
+        margin-left: 173px;
+    }
+    i.better_search{
+        height: 30px;
+        width: 55px;
+        background-size: contain;
+        opacity: 0.6;
+    }
+}
 .layout__region {
     &--second {
         display: contents;
@@ -77,6 +138,52 @@ header {
         max-width: 75px;
     }
 }
+#block-views-block-projects-block-1{
+    width:145%;
+    margin-left: -306px;
+    .view-display-id-block_1{
+        margin-left:0px;
+        padding-left: 90px;
+    }
+    .cols-4{
+        width: 74%;
+        margin: 0 auto;
+        .col-2{
+            margin-left:-28px;
+        }
+        .col-3{
+            margin-left:-28px;
+        }
+        .col-4{
+            margin-left:-28px;
+        }
+        
+    }
+
+}
+#block-views-block-view-news-block-1{
+    width:145%;
+    margin-left: -306px;
+    .view-display-id-block_1{
+        margin-left:0px;
+        padding-left: 90px;
+    }
+    form{
+        margin-left: 215px;
+    }
+    .cols-2{
+        width: 74%;
+        margin: 0 auto;
+        .col-1{
+            margin-left:-28px;
+        }
+        .col-2{
+            margin-left:-28px;
+        }
+        
+    }
+
+} 
 
 @media (max-width: 1600px) {
     /* #block-blockabout {
@@ -146,13 +253,7 @@ header {
 
 @media (max-width: 1350px) {
     #block-blockabout {
-        margin-top: 0px;
-        &::before {
-            width: 97%;
-        }
-        &::after {
-            width: 97%;
-        }
+        margin-top: 25px;
     }
 
     #block-views-block-services-block-1 {
@@ -854,12 +955,7 @@ header {
         }
     }
     #block-blockabout {
-        &::before {
-            width: 90%;
-        }
-        &::after {
-            width: 90%;
-        }
+     margin-top:25px;
     }
     #block-views-block .view-id-projects {
         height: 755px !important;

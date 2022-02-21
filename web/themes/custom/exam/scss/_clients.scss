@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 
-#block-views-block-clients-block-1 {
+#block-views-block-block-clients-block-1 {
     margin-top: 45px;
     margin-bottom: 169px;
     .view-content {
@@ -47,5 +47,29 @@
             }
         }
     }
-    
+    .pager__item--next{
+        a{
+            position: absolute;
+            font-size:103px;
+            right:0;
+            top:0;
+            margin-right: 160px;
+            margin-top:57px;
+            color: transparent;
+        }
+    }
+    .pager__item--previous{
+        a{
+            position: absolute;
+            font-size:103px;
+            left:0;
+            top:0;
+            margin-right: 160px;
+            margin-top:57px;
+            color: transparent;
+        }
+    }
+    .is-active{
+        display:none;
+    }
 }

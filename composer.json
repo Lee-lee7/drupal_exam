@@ -33,6 +33,8 @@
         "drupal/layout_builder_restrictions": "^2.10",
         "drupal/pathauto": "^1.8",
         "drupal/simple_search_form": "^1.4",
+        "drupal/slick": "^2.6",
+        "drupal/slick_views": "^2.6",
         "drupal/social_media_links": "^2.8",
         "drupal/webform": "^6.1"
     },

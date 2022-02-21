@@ -43,6 +43,9 @@
                 a {
                     @include style-button-link;
                 }
+                &:hover{
+                    opacity:0.5;
+                }
             }
         }
     }

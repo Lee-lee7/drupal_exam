@@ -33,11 +33,13 @@
         @include style-line-about;
         background-color: black;
         margin-top: -16px;
+        max-width: 100%;
     }
     &::after {
         content: "";
         @include style-line-about;
         background-color: $blue;
         margin-bottom: -10px;
+        max-width: 100%;
     }
 }

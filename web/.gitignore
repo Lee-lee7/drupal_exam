@@ -33,3 +33,4 @@ themes/contrib
 themes/custom/exam/node_modules/*
 themes/custom/exam/templates/*
 themes/custom/exam/config/*
+/example.gitignore

@@ -33,6 +33,33 @@
                 text-decoration: none;
                 color: white;
             }
+            &:hover{
+                box-shadow: 0 0px 20px $blue;
+            }
+        }
+    }
+    img{
+        width:290px;
+        height:290px;
+        filter: grayscale(100%);
+    }
+    .col-2:hover{
+img{
+    filter: grayscale(0%);
+} }
+ .col-1:hover{
+    img{
+        filter: grayscale(0%);
+    }
+}
+    .col-3:hover{
+        img{
+            filter: grayscale(0%);
+        }
+    }
+    .col-4:hover{
+        img{
+            filter: grayscale(0%);
         }
     }
     .social-media {
@@ -75,4 +102,7 @@
         @include flag-a;
         background-image: url(../img/heart1.png);
     }
+}
+.js-flag-message{
+    display:none;
 }

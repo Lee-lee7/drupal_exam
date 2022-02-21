@@ -10,6 +10,7 @@
     }
     &::before {
         @include style-line-title;
+        margin-left:320px;
     }
     .field--name-field {
         &-text {
@@ -28,6 +29,13 @@
                 text-align: center;
                 a {
                     @include style-button-link;
+                }
+                &:hover{
+                    background-color: $white;
+                    border: solid;
+                    a{
+                        color: black;
+                    }
                 }
             }
         }
@@ -77,36 +85,7 @@
             padding-bottom: 11px;
         }
     }
-    .col {
-        &-1 {
-            .field--name-field-taxonomy-services {
-                a {
-                    color: darkturquoise;
-                }
-            }
-        }
-        &-2 {
-            .field--name-field-taxonomy-services {
-                a {
-                    color: blueviolet;
-                }
-            }
-        }
-        &-3 {
-            .field--name-field-taxonomy-services {
-                a {
-                    color: chocolate;
-                }
-            }
-        }
-        &-4 {
-            .field--name-field-taxonomy-services {
-                a {
-                    color: deepskyblue;
-                }
-            }
-        }
-    }
+   
 }
 .view-id-projects {
     background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.1), #fff 3px, #fff 10px, #fff 0px);
